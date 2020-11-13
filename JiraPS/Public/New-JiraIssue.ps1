@@ -93,7 +93,7 @@ function New-JiraIssue {
         }
 
         if ($PSCmdlet.MyInvocation.BoundParameters.ContainsKey("Reporter")) {
-            $requestBody["reporter"] = @{"AccountId" = "$Reporter"}
+            $requestBody["reporter"] = @{"accountId" = "$Reporter"}
         }
         # elseif ($ProjectObj.Style -eq "next-gen"){
         #     Write-DebugMessage "[$($MyInvocation.MyCommand.Name)] Adding reporter as next-gen projects must have reporter set."
